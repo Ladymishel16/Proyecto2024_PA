@@ -64,5 +64,10 @@ def add_Pedidos():
         flash('Pedido agregado correctamente')
         return redirect(url_for('Index'))
 
+@app.route('/nuestras_marcas')
+def nuestras_marcas():
+    return render_template('nuestras_marcas.html')
+
+
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
